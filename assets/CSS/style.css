@@ -15,19 +15,19 @@
     --color-text-medium-gray: #717171;
     --color-text-body: #4D4D4D;
 
-    --base-font-size: 12px;
-    --font-size-45: 3.75rem;
-    --font-size-25: 2.08rem;
-    --font-size-20: 1.66rem;
-    --font-size-14: 1.16rem;
+    --font-size-64: 4rem;
+    --font-size-36: 2.25rem;
+    --font-size-28: 1.75rem;
+    --font-size-20: 1.25rem;
+    --font-size-14: .87rem;
     --font-size-10: .83rem;
     
-    --gap: 1.33rem;
+    --gap: 4.2rem;
 
 }
 
 html{
-    font-size: var(--base-font-size);
+    font-size: 16px;
 
 
 }
@@ -40,6 +40,13 @@ body{
     background: var(--color-white); 
 }
 
+@media (max-width: 767px){
+    html, body{
+        font-size: 12px;
+    }
+}
+
+
 /* Typography Start */
 
 h1, h2, h3, h4, h5, h6{
@@ -47,9 +54,23 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color-text-medium-gray);
 }
 
+h1, h2, h3{
+    margin-bottom: 1.62rem;
+    font-weight: 600;
+}
 
-.text-45 { font-size: var(--font-size-45); }
-.text-25 { font-size: var(--font-size-25); }
+h4, h5, h6, p, li{
+    margin-bottom: 1.25rem;
+    
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, li):last-child{
+    margin-bottom: 0;
+}
+
+.text-64 { font-size: var(--font-size-64); }
+.text-36 { font-size: var(--font-size-36); }
+.text-28 { font-size: var(--font-size-28); }
 .text-20 { font-size: var(--font-size-20); }
 .text-14 { font-size: var(--font-size-14); }
 .text-10 { font-size: var(--font-size-10); }
@@ -82,17 +103,24 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color-text-body);
 }
 
-.text-blue-darklight{
+.text-blue-graylight{
     color: var(--color-blue-gray-light);
 }
+
+.color-accent{
+    color: var(--color-accent);
+}
 /* Backgrounds End */
+
+
 
 
 /* Container */
 
 .container{
-    max-width: 1002px;
+    max-width: 1440px;
     margin-inline: auto;
+    padding-inline: 140px;
 }
 
 @media (max-width: 1200px){
@@ -133,6 +161,7 @@ a{
     color: var(--color-white);
     text-align: center;
     border-radius: 3px;
+
 }
 
 /* Button & Links End */
@@ -158,3 +187,13 @@ a{
 
 
 /* Utility Classes End*/
+
+
+
+/* Images*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
