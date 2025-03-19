@@ -1,0 +1,114 @@
+/* Header */
+header{
+    padding-block: 1rem;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    width: 100% ;
+    
+}
+
+header ul{column-gap: var(--gap);}
+header nav img .right-aero{
+    position: absolute;
+    
+
+    
+    
+    /* transform: translate(-35px); */
+   
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+@media (max-width: 991px){
+    .hamburger-icon{
+        display: block;
+        width: 2.5rem;
+        height: 1.8rem;
+        position: relative;
+        border: none;
+        background: transparent;
+    }
+    .hamburger-icon span{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border: 1px solid var(--color-accent);
+    }
+    .hamburger-icon span:first-child{
+        top: 0;
+    }
+    .hamburger-icon span:nth-child(2){
+        top: 50%;
+        translate: 0 -50%;
+    }
+    .hamburger-icon span:last-child{
+        bottom: 0;
+    }
+    header nav{position: relative;}
+    header .menu-list{
+        position: absolute;
+        top: 100%;
+        background: #fff;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        box-shadow: 0px 4px 8px rgba(0,0,0,.15);
+        border-radius: .5rem;
+        display: none;
+    }
+    header .menu-list.show{
+        display: block;
+    }
+}  
+ header .nav-link{display: block;}
+
+
+/* Header End */
+
+main{
+    padding-top: 120px;
+}
+
+/* Footer Start */
+
+.footer-bottom{
+    padding: 45px 0px;
+}
+
+.footer-bottom .container{
+    gap: var(--gap);
+    
+   
+}
+
+.footer-bottom .left-panel,
+.footer-bottom .middle-panel,
+.footer-bottom .right-panel {
+    flex-grow: 1;
+    width: 25%;
+
+}
+
+/* .footer-bottom .left-panel{
+    padding-left: 0;
+} */
+
+.footer-bottom .middle-panel{width: 30%; gap: var(--gap);}
+.footer-bottom .middle-panel>*{flex-grow: 1;}
+.footer-bottom .middle-panel li:not(:last-child){
+    margin-bottom: .75rem;
+}
+.footer-bottom .middle-panel ul{
+    margin-top: 1rem;
+}
+.footer-bottom strong{font-weight: 500; color: var(--color-white);}
+        
+
+
+/* Footer End */
