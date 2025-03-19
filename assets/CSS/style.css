@@ -68,6 +68,22 @@ h4, h5, h6, p, li{
     margin-bottom: 0;
 }
 
+
+.section-title-wrapper{
+    margin-bottom: 3.75rem; 
+}
+.section-title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+
 .text-64 { font-size: var(--font-size-64); }
 .text-36 { font-size: var(--font-size-36); }
 .text-28 { font-size: var(--font-size-28); }
@@ -110,6 +126,8 @@ h4, h5, h6, p, li{
 .color-accent{
     color: var(--color-accent);
 }
+
+
 /* Backgrounds End */
 
 
@@ -120,7 +138,7 @@ h4, h5, h6, p, li{
 .container{
     max-width: 1440px;
     margin-inline: auto;
-    padding-inline: 140px;
+    padding-inline: 100px;
 }
 
 @media (max-width: 1200px){
@@ -181,9 +199,7 @@ a{
 .m-0{
     margin-block: auto;
 }
-.text-center{
-    text-align: center;
-}
+
 
 
 /* Utility Classes End*/
