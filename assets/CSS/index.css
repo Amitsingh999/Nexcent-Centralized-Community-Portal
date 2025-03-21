@@ -70,7 +70,6 @@ header .nav-item:last-child {
         width: 100%;
         flex-direction: column;
         align-items: stretch;
-        /* padding: 1rem; */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
         border-radius: .5rem;
         display: none;
@@ -148,7 +147,7 @@ main {
 .hero-banner .left-panel span {
     color: var(--color-accent);
 
-}
+} 
 
 /* Responsive Start */
 
@@ -156,15 +155,12 @@ main {
     .hero-banner .left-panel .content {
         max-width: 480px;
     }
-
     .hero-banner .left-panel {
         margin-block: 10px;
     }
-
     .hero-banner .content h1 {
         font-size: 3.18rem;
     }
-
     .hero-banner .right-panel {
         margin-block: 10px;
         display: flex;
@@ -173,31 +169,58 @@ main {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
     .hero-banner .container {
         flex-direction: column-reverse;
         row-gap: 2rem;
         padding-block: 3rem;
+        align-items: center;
     }
-
     .hero-banner :where(.left-panel, .right-panel) {
-        width: 100%;
+        width: 80%;
     }
-
     .hero-banner .left-panel .content {
         width: 100%;
         text-align: center;
     }
 }
 
+@media (max-width: 575px) {
+    .hero-banner .container {
+        row-gap: 1.5rem;
+        padding-block: 2rem;
+    }
+    .hero-banner :where(.left-panel, .right-panel) {
+        width: 100%;
+    }
+    .hero-banner .left-panel .content {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .hero-banner .content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-banner .left-panel p {
+        font-size: 1rem;
+    }
+    .hero-banner .right-panel img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
 @media (min-width: 992px) {
     .hero-banner .container {
         max-width: 100%;
-
     }
 }
 
 /* Responsive End */
+
+
+
+
 
 
 /* hero-banner page end*/
@@ -263,7 +286,7 @@ h2 {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px);    
 }
 
 .card img {
